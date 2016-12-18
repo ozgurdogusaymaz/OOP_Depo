@@ -31,6 +31,11 @@ namespace YazıhaneApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Silmek İstiyor Musunuz?", "Onay Ekranı", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                listBox1.Items.RemoveAt(listBox1.SelectedIndex);
+            }
             listBox1.Items.Add("İsim\t" + "Cinsiyet\t" + "Otobus");
         }
     }
