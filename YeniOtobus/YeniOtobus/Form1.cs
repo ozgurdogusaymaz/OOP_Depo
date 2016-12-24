@@ -16,5 +16,10 @@ namespace YeniOtobus
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            PicKamilKoc.ImageLocation = "C:\\Users\\Kaan\\Desktop\\Kamil Koç.png";
+        }
     }
 }
